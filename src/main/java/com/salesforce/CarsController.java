@@ -25,12 +25,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CarsController {
-    static final String USERNAME     = "deepa@myde.com";
-    static final String PASSWORD     = "dj4salesforce";
-    static final String LOGINURL     = "https://deepa2017-dev-ed.my.salesforce.com/";
+    static final String USERNAME     = "<Your Salesforce Username>";
+    static final String PASSWORD     = "<Your Salesforce Password>";
+    static final String LOGINURL     = "<Your Salesforce Domain >";
     static final String GRANTSERVICE = "/services/oauth2/token?grant_type=password";
-    static final String CLIENTID     = "3MVG9zlTNB8o8BA0DQz_ttdA8K6LoilpgvDoxcfT_X.3XJAixmvx2i5XN9dqEEabWxh0TiQSJxUK2y5y2eg9n";
-    static final String CLIENTSECRET = "8250645594729143891";
+    static final String CLIENTID     = "<Your Connected App OAuth Client ID>";
+    static final String CLIENTSECRET = "<Your Connected App OAuth Client SECRET>";
     private static String accessToken;
     
     @RequestMapping("/authenticate")
